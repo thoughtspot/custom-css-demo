@@ -1,0 +1,819 @@
+/*root variables*/
+
+:root {
+  --black-shadow-color: rgba(0, 0, 0, 0.15);
+  --light-shadow-color: rgba(0, 0, 0, 0.2);
+  --btn-gradients-light-hover-quiet-color: #dcf4ff;
+  --btn-gradients-light-pressed-color: #aedcf5;
+  --btn-gradients-light-hover-color: #1da4ff;
+  --blue-n1-color: #0072c2;
+  --grey-p1-color: #909090;
+  --grey-p5-color: #D0D0D0;
+  --grey-p6-color: #e0e0e0;
+  --grey-p7-color: #f0f0f0;
+  --grey-p8-color: #f7f7f7;
+  --grey-p9-color: #ffffff;
+  --grey-p3-color: #b0b0b0;
+  --grey-n1-color: #707070;
+  --grey-n5-color: #303030;
+  --very-light-grey-color: #f9f9f9;
+  --icon-light-blue-color: #005eac;
+  --light-sky-blue-color: rgba(136, 221, 255, 0.15);
+  --rough-n-tumble-color: #5a4949;
+  --light-secondary: #606060;
+  --search-blue: #88DDFF;
+  --dodger-blue: #1792e5;
+}
+
+/* Font-family */
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*:not(.find-widget.visible div) {
+  font-family: "Dancing Script" !important;
+}
+
+/* app background*/
+
+.bk-actionable-list .bk-actionable-list-content .bk-actionable-list-header
+/*action header */
+, .bk-actionable-list .bk-actionable-list-content .bk-list-header-wrapper
+/* table headr right/left space*/
+, .bk-actionable-list .bk-actionable-list-content .bk-list-content
+/* table body right/left space*/
+, .bk-sharable-item .bk-sharable-item-container .bk-sharable-content-container
+/*  pinboard detail */
+, .bk-vertical-flex-container-sized
+/* data tab*/,
+.answer-module__searchCurtain /* answer section*/ {
+  background-color: var(--grey-p8-color) !important;
+}
+
+/* Button
+bk/rd-button-primary/secondary :  v1
+button-module__primary/secondary: v2
+bk-axis-sort-icon : pinboard up/down arrow
+*/
+
+.rd-button-primary,
+.bk-button-primary,
+.button-module__primary {
+  font-weight: 800 !important;
+  background: linear-gradient(
+    144.82deg,
+    #0072c2 5.58%,
+    #1792e5 93.38%
+  ) !important;
+  box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+  border-radius: 4px !important;
+  color: var(--grey-p9-color) !important;
+}
+
+/*fix8: +Pinboard' should be primary button.*/
+.bk-create-new-pinboard .rd-button-wrapper .rd-button-secondary  {
+  font-weight: 800 !important;
+  background: linear-gradient(
+    144.82deg,
+    #0072c2 5.58%,
+    #1792e5 93.38%
+  ) !important;
+  box-shadow: 1px 1px 1px transparent !important;
+  border-radius: 4px !important;
+  color: var(--grey-p9-color) !important;
+  border: 1px solid transparent !important;
+}
+
+.rd-button-primary:hover,
+.bk-button-primary:hover,
+.button-module__primary:hover,
+.bk-create-new-pinboard .rd-button-wrapper .rd-button-secondary:hover {
+  background: var(--btn-gradients-light-hover-color) !important;
+}
+
+.rd-button-primary:active,
+.bk-button-primary:active,
+.button-module__primary:active,
+.bk-create-new-pinboard .rd-button-wrapper .rd-button-secondary:active {
+  background: var(--blue-n1-color) !important;
+}
+
+.rd-button-primary[disabled],
+.bk-button-primary[disabled],
+.button-module__primary[disabled],
+.bk-disabled-button.bk-primary-button,
+.bk-create-new-pinboard .rd-button-wrapper .rd-button-secondary[disabled] {
+  background: var(--grey-p3-color) !important;
+  border-radius: 4px !important;
+  color: var(--grey-p9-color);
+}
+
+.rd-button-secondary,
+.bk-secondary-button,
+.button-module__secondary,
+.bk-axis-sort-icon {
+  background: var(--grey-p9-color) !important;
+  color: var(--grey-n5-color) !important;
+  border: 1px solid var(--grey-p7-color) !important;
+  box-sizing: border-box !important;
+  box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+  border-radius: 4px !important;
+}
+
+.rd-button-secondary:hover,
+.bk-secondary-button:hover,
+.button-module__secondary:hover,
+.bk-axis-sort-icon:hover {
+  background: var(--btn-gradients-light-hover-quiet-color) !important;
+  color: var(--icon-light-blue-color) !important;
+  border: 1px solid transparent !important;
+}
+
+.rd-secondary-button:active,
+.bk-secondary-button:active,
+.button-module__secondary:active,
+.bk-axis-sort-icon:active {
+  background: var(--btn-gradients-light-pressed-color) !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.rd-secondary-button[disabled],
+.bk-secondary-button[disabled],
+.button-module__disabled,
+.bk-disabled-button.bk-secondary-button {
+  border: 1px solid var(--grey-p3-color) !important;
+  background: var(--grey-p9-color);
+  color: var(--grey-p3-color) !important;
+  pointer-events: none;
+}
+
+/*  modal inside seconday button 
+*/
+
+.bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper {
+  border: 1px solid var(--icon-light-blue-color) !important;
+  border-radius: 4px !important;
+}
+
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary:hover
+  > .rd-button-text {
+  color: var(--grey-p9-color) !important;
+}
+
+/* modal inside seconday button (text-color)  */
+.modal-module__footer .modal-module__actionBtn .button-module__secondary > p,
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary
+  .rd-button-text {
+  color: var(--icon-light-blue-color) !important;
+}
+
+.modal-module__footer
+  .modal-module__actionBtn:hover
+  .button-module__secondary
+  > p {
+  color: var(--grey-p9-color) !important;
+}
+
+/* modal inside seconday button (border-color)  */
+.modal-module__footer .modal-module__actionBtn > .button-module__secondary {
+  border: 1px solid var(--icon-light-blue-color) !important;
+}
+
+/* cancel button height  */
+.modal-footer .bk-cancel-button .rd-button-wrapper .rd-button-secondary {
+  height: 29px !important;
+}
+
+.modal-module__footer
+  .modal-module__actionBtn:hover
+  > .button-module__secondary,
+.bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper:hover,
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary:hover {
+  background: var(--btn-gradients-light-hover-color) !important;
+  border: 1px solid transparent !important;
+}
+
+.modal-module__footer
+  .modal-module__actionBtn:active
+  > .button-module__secondary,
+.bk-modal-action-buttons .bk-cancel-button .rd-button-wrapper:active,
+.bk-modal-action-buttons
+  .bk-cancel-button
+  .rd-button-wrapper
+  .rd-button-secondary:active {
+  background: var(--blue-n1-color) !important;
+  border: 1px solid transparent !important;
+}
+
+/*fix.17 discard changes link */
+button[aria-label="Discard changes"], button[aria-label="Discard changes"]:hover,
+button[aria-label="Don't save"],
+button[aria-label="Don't save"] >p, button[aria-label="Don't save"]:hover >p {
+  box-shadow: none  !important;
+  border: none  !important;
+  outline: none  !important;
+  color: var(--icon-light-blue-color)  !important;
+  background: var(--grey-p9-color) !important;
+  letter-spacing: 0.5px !important;
+  font-weight: 700  !important;
+  font-size: 14px !important;
+}
+
+/*develop tab see in live btn 
+*/
+
+.button-module__primary > .button-module__buttonText {
+  color: var(--grey-p9-color);
+}
+
+/* select and filter chips
+.bk: v1
+.select-module: 
+rd-chip-wrapper: pinboard v1
+chip-base-module: answer v2
+*/
+
+.bk-select-visibility {
+  border: none !important;
+}
+
+.bk-select-head,
+.select-module__selectHead,
+.rd-chip-wrapper,
+.chip-base-module__filter {
+  border: 1px solid var(--grey-p6-color) !important;
+  box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+  border-bottom-right-radius: 4px !important;
+  border-radius: 4px !important;
+  background-color: var(--grey-p9-color) !important;
+  font: 16px !important;
+  color: var(--grey-n5-color) !important;
+}
+
+/*viz pinboard add filter chips */
+.rd-chip {
+  background: var(--grey-p9-color) !important;
+}
+
+.bk-select-head::after {
+  border-bottom: none !important;
+}
+
+.bk-select-head:active,
+.bk-select-head:hover,
+.select-module__selectHead:hover,
+.select-module__selectHead:active,
+.rd-chip-wrapper:hover,
+.chip-base-module__filter:hover {
+  border: 1px solid var(--grey-p1-color) !important;
+}
+
+/* select disabled */
+
+.bk-select-head.bk-disabled,
+.bk-dropdown-item-disabled,
+.select-module__selectHead[disabled] {
+  color: var(--grey-p3-color) !important;
+  background: var(--grey-p8-color) !important;
+}
+
+/* dropdown up icon caret background */
+
+.select-module__selectOpen > [data-radiant-v2].icon-module__gray,
+.bk-select.bk-dropdown-open .dropdown-caret {
+  background: var(--btn-gradients-light-pressed-color) !important;
+  border-radius: 4px !important;
+}
+
+.bk-action-menu,
+.select-module__popoverWrapper > .menu-module__actionMenu {
+  background: var(--grey-p7-color) !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.select-module__popoverWrapper
+  > [data-radiant-v2].input-base-module__container {
+  border: none !important;
+  padding-left: 14px;
+  background: var(--grey-p7-color) !important;
+  border-radius: 0 !important;
+  border-bottom: 2px solid var(--grey-p6-color) !important;
+}
+
+.select-module__popoverWrapper > .input-text-module__container {
+  padding: 0 !important;
+}
+
+.bk-dropdown-item-info:hover,
+.bk-dropdown-item-container :hover,
+.menu-module__itemInfo:hover {
+  background: var(--light-sky-blue-color) !important;
+}
+
+.bk-dropdown-item-info:hover > .bk-dropdown-text,
+.menu-module__itemInfo:hover > .menu-module__itemText > p {
+  color: var(--icon-light-blue-color) !important;
+}
+
+/* filter chips pinboard v1 
+ */
+
+.rd-chip.rd-chip-style-filter {
+  background: var(--grey-p9-color) !important;
+  padding: 0 10px !important; /* pinboard dropdown padding */ 
+}
+
+.rd-chip.rd-chip-style-filter:hover {
+  border: none !important;
+}
+
+/*  search field
+.bk-input-container: v1
+input-base-module: v2
+ */
+
+[data-radiant-v2] .input-base-module__container,
+.bk-input-container-inner {
+  background: var(--grey-p7-color) !important;
+  box-shadow: inset 1px 1px 1px var(--black-shadow-color) !important;
+  border-radius: 4px !important;
+  border: 1px solid transparent !important;
+  border-bottom: none !important;
+  color: var(--light-secondary) !important;
+  font-weight: 500 !important;
+}
+
+[data-radiant-v2] .input-base-module__container .input-base-module__input {
+  font-size: 16px !important;
+  padding-bottom: 3px !important;
+}
+
+[data-radiant-v2] .input-base-module__container:hover,
+.bk-input-container-inner:hover {
+  box-shadow: none !important;
+  border: 1px solid var(--icon-light-blue-color) !important;
+}
+
+/* remove blue bottom border */
+.bk-input-container-inner::after {
+  border-bottom: 1px solid transparent !important;
+}
+
+input:placeholder-shown {
+  font-style: italic !important;
+}
+
+[data-radiant-v2]
+  .input-base-module__container:hover
+  [data-radiant-v2].icon-module__gray,
+.bk-input-container-inner:hover .rd-icon-color-gray {
+  fill: var(--light-secondary) !important;
+}
+
+[data-radiant-v2].icon-module__gray,
+.bk-input-container-inner .rd-icon-color-gray {
+  fill: var(--grey-n5-color) !important;
+}
+
+/* table header
+  answerlist/pinboard list => v1
+*/
+
+/*tag border*/
+.bk-tagged-label {
+  border-color: var(--light-secondary) !important;
+}
+
+/* tag text color*/
+.bk-tagged-label .bk-label-text {
+ color: var(--light-secondary) !important;
+ font-weight: 500 !important; 
+}
+
+/* remove tag remove icon bg color */
+.rd-icon-remove-m >svg{
+  background-color: var(--grey-p9-color) !important;
+}
+
+/*fix16. Search box shift when pagination is done  */
+.bk-pagination-display-text {
+  width: 52px !important; 
+}
+
+/* checkbox alignment */
+.bk-select-all-checkbox {
+  padding-left: 16px !important;
+}
+
+/*show table checkbox  */
+.bk-actionable-list .bk-actionable-list-content .bk-list-header .bk-select-all-checkbox,
+.bk-actionable-list .bk-actionable-list-content .bk-list-content .bk-list-content-li .bk-item-selector-checkbox {
+  visibility: visible !important;
+}
+
+/* table header */
+.bk-list-header {
+  padding: 0 !important;
+  height: 56px !important; /*border bottom border 2px + height 54px */
+  border-bottom: 2px solid var(--grey-p8-color) !important;
+  line-height: 20px !important;
+  background: var(--grey-p9-color) !important;
+  font-weight: 800 !important;
+  color: var(--grey-n5-color) !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+}
+
+/* table body text */
+.bk-actionable-list .bk-actionable-list-content .bk-list-content .bk-list-content-li {
+   max-height: 50px !important;/* 49px height + 1px border */
+   font-size: 16px !important;
+   font-weight: 500 !important;
+   height: 50px !important;
+}
+
+/* table body hide subtext */
+ .bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-description-text {
+  display: none !important;
+} 
+
+/*modified column */
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-time-and-author .bk-time-author-label,
+.rd-avatar-display-text /*author */{
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 24px !important;
+  color: var(--light-secondary) !important;
+}
+
+/* table Name column*/
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text-wrapper .bk-name-text,
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text /*Data tab: tablname column*/ {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 0px !important;
+}
+
+/*table context box shadow */
+.bk-actionable-list
+  .bk-actionable-list-content
+  .bk-list-content
+  .bk-list-content-wrapper {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  color: var(--light-secondary) !important;
+}
+
+/* table content title/subtitle */
+
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text-wrapper .bk-name-text,
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-description-text,
+.vizChart .chart-legend-container-v2 .legend-item-v2 .label-v2 .legend-text-v2   /* chart legend */,
+.bk-pagination-display-text /* pagination text */ {
+  color: var(--light-secondary) !important;
+}
+
+/* verticle separater */
+.bk-column-title {
+  border-left: 2px solid var(--grey-p8-color) !important;
+  text-align: center !important;
+  padding-left: 16px !important;
+  margin-right: 5px !important;
+}
+
+/* data table content alignment */
+.bk-column {
+  padding-left: 16px !important;
+}
+
+/*after select checkbox, table background */
+.bk-list-content-li.vs-repeat-repeated-element.ng-scope.bk-row-selected-bg {
+  background: var(--very-light-grey-color) !important;
+}
+
+/* Data tab: Table 
+*/
+
+/* table edge border*/
+.bk-table-container {
+  border: none !important;
+}
+
+/*data table row text*/
+.bk-table-detail .bk-explorer-table .slick-row .slick-cell.column-name-cell .edit-wrapper .bk-value /*static row  */,
+.bk-explorer .bk-content .bk-table-detail .bk-explorer-table .slick-row .slick-cell /* scrollable row*/,
+.bk-actionable-list .bk-actionable-list-content .bk-list .bk-name .bk-name-text /* Data Tab: body text */ {
+  font-size: 16px !important;
+  color: var(--light-secondary) !important;
+  font-weight: 500px !important;
+}
+
+/* Slick table inside data tab, after click row 
+*/
+
+/* slick header text*/
+.bk-table-container .slick-header-column .slick-column-name {
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  vertical-align: sub !important;
+} 
+
+/* slick table verticle divider*/
+.bk-slickgrid-table
+  .bk-table-container
+  .slick-header-column
+  .slick-resizable-handle {
+  border-right: 2px solid var(--grey-p8-color) !important;
+}
+
+/* slick header bottom border */
+.bk-slickgrid-table .bk-table-container .slick-header {
+  border-bottom: 2px solid var(--grey-p8-color) !important;
+}
+
+/* slick table header text*/
+.bk-explorer
+  .bk-content
+  .bk-table-detail
+  .bk-explorer-table
+  .slick-header-columns
+  .slick-column-name {
+  font-weight: 800 !important;
+  color: var(--grey-n5-color) !important;
+  font-size: 12px !important;
+}
+
+/* table content row */
+.bk-slickgrid-table .bk-table-container .slick-row {
+  height: 39px !important;
+}
+
+/* Popup 
+*/
+
+/* popup v2 */
+.modal-module__modal {
+  box-shadow: 15px 30px 40px var(--light-shadow-color),
+    0px 11px 15px -2px var(--light-shadow-color) !important;
+  border-radius: 10px !important;
+}
+
+.modal-module__header {
+  border-bottom: none !important;
+}
+
+.modal-module__header .modal-module__title,
+.modal-header {
+  padding-top: 30px !important;
+  color: var(--grey-n5-color) !important;
+  font-size: 24px !important;
+  background: var(--grey-p9-color) !important;
+}
+
+/*Pinboard card (regular card container)*/
+.bk-pinboard-data-viz,
+ .bk-pinboard-generic-viz /* fix15.Card hover/raised shadow*/ {
+  background: var(--grey-p9-color) !important;
+  border: 0.5px solid var(--grey-p6-color) !important;
+  box-shadow: 1px 1px 1px 0px var(--black-shadow-color) !important;
+  border-radius: 10px !important;
+}
+
+.bk-pinboard-data-viz:hover, 
+.bk-pinboard-generic-viz:hover {
+  border: 0.5px solid var(--grey-p6-color) !important;
+  box-shadow: 4px 4px 8px 0px var(--light-shadow-color) !important;
+}
+
+/* pinbord table checkbox */
+.bk-checkbox-container .bk-checkbox-label::before {
+  border: 1px solid var(--grey-n1-color) !important;
+  border-radius: 2px !important;
+}
+
+/* fix truncated Pinboard title bottom  */
+.bk-sharable-item-pinboard-plugin
+  .bk-edit-dropdown
+  .bk-pinboard-drop-down
+  .bk-select-box
+  .ui-select-container
+  .ui-select-match,
+.bk-sharable-item-pinboard-plugin
+  .bk-edit-dropdown
+  .bk-pinboard-drop-down
+  .bk-select-box
+  .ui-select-container
+  .ui-select-match
+  .select2-chosen {
+  height: 42px !important;
+}
+
+/* pinboard select  */
+.select2-chosen {
+  color: var(--grey-n5-color) !important;
+  font-size: 24px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0px !important;
+}
+
+/*Search dropdown */
+.sage-completions-dropdown-module__completion:hover,
+.bk-actionable-list .bk-actionable-list-content .bk-list-content .bk-list-content-li:hover:not(.bk-row-selected-bg) /* table hover*/ {
+    background-color: var(--search-blue) !important;
+}
+
+/* Pinboard */
+
+/* User Information (name and user badges) are not required */
+.bk-top-users {
+  display: none !important;
+}
+
+/* Filter icon padding is incorrect/ Dropdown outside padding w.r.t outer white container */
+.pinboard-filter-panel > .bk-filter-panel{
+  padding: 8px 16px 10px 16px !important;  /* already 8px + 8px */
+}
+
+/* pinboard dropdown top/bottom padding */
+.rd-chip-text-style-regular, .rd-chip-text-style-bold {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+/*fix6. Card Title font spec is wrong (pinboard card title) */
+.bk-pinboard-viz-title-description > .bk-title-description >.bk-title-section, 
+.bk-title-description .bk-title-section .bk-title  {
+  font-size: 16px !important;
+  font-style: normal !important;
+  line-height: 24px !important;
+  letter-spacing: 2.5px !important;
+  color: var(--grey-n5-color) !important;
+  font-weight: 800 !important;
+}
+
+/*fix7. pinboard card  :-breaking changes */
+/* .bk-pinboard-data-viz, .bk-pinboard-generic-viz {
+  padding: 32px !important;
+} */
+
+/*fix7. pinboard card/action-menu */
+/* .bk-pinboard-card .bk-pb-card-action-menu {
+  padding-top: 32px !important;
+  padding-right: 32px !important;
+} */
+
+/*fix8. description padding :- breaking changes (shrink chart size)*/
+.bk-pinboard-data-viz .bk-pinboard-viz-header .bk-description {
+  padding-top: 16px !important;
+}
+
+/*fix.9 Metric font specification wrong*/
+.headline-viz-module__aggregationValue {
+  font-size: 28px !important;
+  font-weight: 800 !important;
+  line-height: 24px !important;
+  letter-spacing: 0px !important;
+  color: var(--grey-n5-color) !important;
+}
+
+.bk-dialog-container  rd-icon:not(.bk-input-icon)+input,
+ .bk-dialog-container textarea,
+ .bk-dialog .bk-dialog-field input,
+  .bk-range-select > .bk-range-select-row > input {
+  background: var(--grey-p6-color) !important; 
+  box-shadow: inset 1px 1px 1px var(--black-shadow-color) !important;
+  border-radius: 4px !important;
+  border:  1px solid transparent !important; 
+  color: var(--light-secondary) !important; 
+  font-style: italic !important; 
+  font-size: 16px !important; 
+  line-height: 24px !important;
+  min-height: 40px !important;
+  padding: 8px 12px 8px 12px !important;
+}
+
+.bk-dialog-container  rd-icon:not(.bk-input-icon)+input:hover, .bk-dialog-container textarea:hover,
+.bk-dialog .bk-dialog-field input:hover,
+.bk-range-select > .bk-range-select-row > input:hover   {
+  background: var(--grey-p5-color)  !important;
+  font-style: italic !important;  
+}
+
+.bk-dialog-container  rd-icon:not(.bk-input-icon)+input:active, .bk-dialog-container textarea:active,
+.bk-dialog .bk-dialog-field input:active,
+.bk-range-select > .bk-range-select-row > input:active   {
+  border: 1px solid var(--icon-light-blue-color) !important; 
+  color:  var(--grey-n5-color) !important; 
+  font-style: normal !important; 
+}
+
+/* add pinboard dialog hide extra outline in text area*/
+.bk-dialog-field > textarea:focus-visible {
+  outline: none  !important; 
+}
+
+/* Tab
+.bk-category- for pinboard tab
+rd-tab-header-item for data tab
+*/
+
+/* non active tab text */
+.bk-category- > span, .rd-tab-header-item > a >span{
+  color: var(--light-secondary) !important;
+}
+
+/* active tab text */
+.bk-category-.bk-selected > span, .rd-tab-header-item-selected > a >span {
+ color: var(--grey-n5-color) !important;
+}
+
+/* active tab bottom border */
+.top-list-filters .bk-filter-item .bk-top-menu-filters li.bk-selected::after, .rd-tab-header-item-selected > a::after {
+  background-color: var(--dodger-blue)!important;
+}
+
+/* rangle select (add filter inside pinboard) */
+.bk-range-select .chosen-single > span  {
+  padding-top: 6px !important;
+}
+
+/* dropdown inside pinboard */
+.bk-operator-selector-wrapper > bk-select > .bk-select  > .bk-select-head,
+.bk-range-select .chosen-single  {
+  height: 40px  !important;
+}
+
+/* pinboard add filter popup input */
+.bk-range-select > .bk-range-select-row > input {
+  margin-left: 5px !important;
+}
+
+/* fix Text box height should be equal to height of the drop down */
+.bk-operator-selector-wrapper > bk-select > .bk-select > .bk-select-head {
+  height: 32px !important;
+}
+
+/* fix Padding between drop down and button should be 8 px */
+.pin-button-module__dualIntentSecondaryButton {
+  padding-right: 8px !important;
+}
+
+/* fix Padding should be 8 px between the buttons. Height of the both button should be same */
+.button-module__buttonWrapper.modal-module__actionBtn button[aria-label='Save answer'] {
+  height: 34px !important;
+}
+
+/* fix Padding should be 8 px between the buttons. Height of the both button should be same */
+.modal-module__footer .modal-module__actionBtn {
+  margin-left: 8px !important;
+}
+
+/*fix Padding across 'GO' button need to be same. GO button padding 8 */
+.button-module__buttonWrapper.sage-search-bar-module__searchButton {
+  margin-top: 8px  !important;
+  margin-right: 8px  !important;
+  margin-bottom: 8px  !important;
+}
+
+/*after Go button padding, set alignment of search icon sage-search*/
+.sage-search-bar-module__leftIconWrapper {
+  margin-top: 19px !important;
+}
+
+/*after Go button padding, set alignment of token bar sage-search */
+.token-bar-module__tokenBarWrapper {
+  padding-top: 14px !important;
+}
+
+/*after Go button padding, set alignment of sage-search's placeholder */  
+.sage-search-box-module__bkSagePlaceholderText {
+  margin-top: 8px;
+}
+
+ /* table inside checkbox
+ .bk-checkbox-container .bk-checkbox:checked+.bk-checkbox-label::before {
+ add here checkbox style...
+} */
+
+/*fix pinboard top padding 50 => 16px */
+.sharable-item-panel {
+  padding-top: 16px !important;
+}
