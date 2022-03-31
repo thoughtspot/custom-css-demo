@@ -1,6 +1,6 @@
 # Custom Styling in ThoughtSpot Everywhere (Embed)
 
-Guideline to override ThoughtSpot's default styles to match the parent application's defaults.
+Guideline to override ThoughtSpot's style to match the parent application's defaults.
 
 ## Installation
 
