@@ -14,7 +14,7 @@ As this is CSS based, this can be used to customize most parts of the UI visuall
 
 To try this out in the Developer Playground:
 1. Go to Full App Embed in [The Developer Playground](https://try-everywhere.thoughtspot.cloud/v2/#/everywhere/playground/fullApp)
-2. In the _init_ part of the code block in the bottom left part of the page, add one line to point to our template css file (initiated via the **CustomCss** call):
+2. In the _init_ part of the code block in the bottom left part of the page, add one line to point to our template css file (initiated via the **customCssUrl** call):
 
 ```js
 // Initialize embed configuration
