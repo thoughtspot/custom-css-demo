@@ -17,7 +17,7 @@ To try this out in the Developer Playground:
 2. In the _init_ part of the code block, add a pointer to our template css file (initiated via the **CustomCss** call):
 
 ```js
-// Write Javascript code!
+// Initialize embed configuration
 init({
   thoughtSpotHost:
     /*param-start-hosturl*/"https://try-everywhere.thoughtspot.cloud"/*param-end-hosturl*/,
