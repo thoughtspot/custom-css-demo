@@ -5,7 +5,7 @@ Guideline to override ThoughtSpot's default styles to match the parent applicati
 ## Installation
 
 ### 1. Customizing the application.
-Thoughtspot supports customization of key UI components today, such as application logo & favicon, font style for charts and tables, background color for the UI, background color of the navigation panel, the color palette for your charts, and a few more. To learn how to use these controls, kindly refer to the product documentation: [Customize layout and styles](https://developers.thoughtspot.com/docs/?pageid=customize-style)
+Thoughtspot supports customization of key UI components today, such as application logo & favicon, font style for charts and tables, background color for the UI, background color of the navigation panel, the color palette for your charts, and a few more. To learn how to use these controls, kindly refer to the product documentation: [Customize layout and styles](https://developers.thoughtspot.com/docs/?pageid=customize-style).
 
 ### 2. Customizing the application style guide
 
