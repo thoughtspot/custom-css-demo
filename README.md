@@ -25,3 +25,4 @@ init({
   customCssUrl:"cdn.jsdelivr.net/gh/thoughtspot/custom-css-demo/complete.css"
 });
 ```
+#### Important note: This feature directly overrides CSS in the application. As such, these overrides may stop functioning in future cluster updates and this method is not fully supported. The ThoughtSpot team is working on a long term solution to provide a framework to these overrides. Reach out to us to provide feedback!
