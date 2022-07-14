@@ -599,6 +599,9 @@ select {
 .bk-expanded-pinboard-card.bk-incremental-search{
 	border: none !important;
 }
+.bk-sharable-item-pinboard-info {
+	background-color: inherit !important;
+}
 .rd-chip{
 	background: #373737 !important;
 	border: 1px solid #454648 !important;
