@@ -8,7 +8,7 @@
 }
 
 .button-module__backgroundLight.button-module__primary {
-  background-color: #000000;
+  background-color: #000000 !important;
 }
 
 .chip-base-module__filter {
