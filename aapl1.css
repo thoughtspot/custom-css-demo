@@ -1,0 +1,25 @@
+
+.button-module__sizeM.button-module__both {
+  border-radius: 5px;
+}
+
+.button-module__secondary {
+  background-color: #F8F7FB !important;
+}
+
+.chip-base-module__filter {
+  background-color: #F9F7F9;
+  border: 2px solid #0B6FD1;
+  color: #27679E;
+}
+
+@font-face {
+  font-family: 'sf-pro';
+  src: url('https://cdn.jsdelivr.net/gh/thoughtspot/custom-css-demo/sf-pro-text_light.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: sf-pro, sans-serif !important;
+}
