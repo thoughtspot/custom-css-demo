@@ -1,6 +1,6 @@
 
 .button-module__sizeM.button-module__both {
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 
 .button-module__secondary {
@@ -8,9 +8,9 @@
 }
 
 .chip-base-module__filter {
-  background-color: #F9F7F9;
-  border: 2px solid #0B6FD1;
-  color: #27679E;
+  background-color: #F9F7F9 !important;
+  border: 2px solid #0B6FD1 !important;
+  color: #27679E !important;
 }
 
 @font-face {
