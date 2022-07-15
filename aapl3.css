@@ -7,6 +7,10 @@
   background-color: #F8F7FB !important;
 }
 
+.button-module__backgroundLight.button-module__primary {
+  background-color: #000000;
+}
+
 .chip-base-module__filter {
   background-color: #F9F7F9 !important;
   border: 2px solid #0B6FD1 !important;
