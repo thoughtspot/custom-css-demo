@@ -1868,3 +1868,11 @@ svg text {
 .chip-base-module__default:not(.chip-base-module__edit) {
 	background-color: #373737 !important;
 }
+
+.pinboard-header-module__pinboardHeader {
+  background-color: #000 !important;
+}
+
+.pinboard-content-module__gridContainer {
+  background-color: #000 !important;
+}
