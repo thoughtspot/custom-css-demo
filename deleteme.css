@@ -1,0 +1,15 @@
+[data-testid="test-component"]{
+    background:#ff0000 !important;
+}
+[data-testid="sage-search-bar"]{
+    box-shadow: none !important;    
+    border: 1px solid #80b6ee !important;
+    border-radius: 10px;
+}
+.bk-pinboard-data-viz{
+    box-shadow: none !important;
+}
+.rd-button{
+    background: none !important;
+    box-shadow: 0 0 5px #aaaaaa !important;
+}
