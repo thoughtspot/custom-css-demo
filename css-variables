@@ -1,0 +1,60 @@
+/*! ThoughtSpot 2022-09-17
+* http://www.thoughtspot.com/
+* Copyright (c) 2022 ThoughtSpot 
+*/
+:root {
+  /******** App ********/
+  
+  /*App background, app-wide font, app-wide text transform */
+  --ts-var-root-background: initial;
+  --ts-var-root-font-family: initial;
+  --ts-var-root-text-transform: initial;
+
+  /******** Nav bar ********/
+  /*Nav bar font color, background color*/
+  --ts-var-nav-color: white;
+  --ts-var-nav-background: crimson;
+  
+  /******** Buttons ********/
+  
+  /* App wide button design for main buttons*/
+  --ts-var-button-border-radius: 5px;
+  
+  /* App wide button design for smaller buttons (ex: share, favorite, etc.)*/
+  --ts-var-button--icon-border-radius: 5px;
+
+  /* Primary buttons: For instance the Go button on the Search bar, when the search bar is clicked on */
+  --ts-var-button--primary-color: white;
+  --ts-var-button--primary-background: crimson;
+  --ts-var-button--primary--hover-background: #C70039;
+  --ts-var-button--primary--font-family: initial;
+  
+  /* Secondary buttons: For instance most of the buttons on a Liveboard */
+  --ts-var-button--secondary-color: initial;
+  --ts-var-button--secondary-background: initial;
+  --ts-var-button--secondary--hover-background: initial;
+  --ts-var-button--secondary--font-family: initial;
+  
+  /* Tertiary buttons: Example the forward / back buttons */
+  --ts-var-button--tertiary-color: initial;
+  --ts-var-button--tertiary-background: initial;
+  --ts-var-button--tertiary--hover-background: initial;
+  
+  /******** Visualizations ********/
+  /* Viz title customizations*/
+  --ts-var-viz-title-color: charcoal;
+  --ts-var-viz-title-font-family: initial;
+  --ts-var-viz-title-text-transform: italic;
+
+  /* Viz subtitle customizations*/
+  --ts-var-viz-description-color: #A4A4A3;
+  --ts-var-viz-description-font-family: initial;
+  --ts-var-viz-description-text-transform: initial;
+  
+  /* Viz area customizations*/
+  --ts-var-viz-border-radius: 15px;
+  --ts-var-viz-box-shadow: 1px 2px 5px #888888;
+  --ts-var-viz-background: initial;
+}
+
+/*# sourceMappingURL=custom_variables.css.map */
