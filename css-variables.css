@@ -12,8 +12,8 @@
 
   /******** Nav bar ********/
   /*Nav bar font color, background color*/
-  --ts-var-nav-color: white;
-  --ts-var-nav-background: crimson;
+  --ts-var-nav-color: #AAC7F9;
+  --ts-var-nav-background: #2359B6;
   
   /******** Buttons ********/
   
@@ -25,8 +25,8 @@
 
   /* Primary buttons: For instance the Go button on the Search bar, when the search bar is clicked on */
   --ts-var-button--primary-color: white;
-  --ts-var-button--primary-background: crimson;
-  --ts-var-button--primary--hover-background: #C70039;
+  --ts-var-button--primary-background: #2359B6;
+  --ts-var-button--primary--hover-background: blue;
   --ts-var-button--primary--font-family: initial;
   
   /* Secondary buttons: For instance most of the buttons on a Liveboard */
