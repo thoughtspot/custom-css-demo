@@ -2,10 +2,18 @@
 * http://www.thoughtspot.com/
 * Copyright (c) 2022 ThoughtSpot 
 */
+
+/******** Useful design resources ********/
+/* Check our Radiant style guide. For colors: https://radiant.thoughtspot.com/4be2fa497/p/28fa0a-colors/t/835c57 */
+/****************************************/
+
+
 :root {
   /******** App ********/
   
-  /*App-wide background, app-wide text color, app-wide font, app-wide text transform */
+  /* App-wide background, app-wide text color, app-wide font, app-wide text transform */
+  /* Note: In Radiant design, background app color will be shade 10 */
+
   --ts-var-root-background: initial;
   --ts-var-root-color: initial;
   --ts-var-root-font-family: initial;
@@ -13,6 +21,7 @@
 
   /******** Nav bar ********/
   /*Nav bar font color, background color*/
+  /* Note: In Radiant design, background nav color will be shade 70, font color shade 40 */
   --ts-var-nav-color: #AAC7F9;
   --ts-var-nav-background: #2359B6;
   
@@ -25,12 +34,14 @@
   --ts-var-button--icon-border-radius: 5px;
 
   /* Primary buttons: For instance the Go button on the Search bar, when the search bar is clicked on */
+  /* Note: In Radiant design, primary button color will be shade 60, hover shade 70 */
   --ts-var-button--primary-color: white;
   --ts-var-button--primary-background: #2359B6;
   --ts-var-button--primary--hover-background: blue;
   --ts-var-button--primary--font-family: initial;
   
   /* Secondary buttons: For instance most of the buttons on a Liveboard */
+  /* Note: In Radiant design, secondary button color will be shade 20, hover shade 30 */
   --ts-var-button--secondary-color: initial;
   --ts-var-button--secondary-background: initial;
   --ts-var-button--secondary--hover-background: initial;
