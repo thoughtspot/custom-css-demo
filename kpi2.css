@@ -1,0 +1,65 @@
+/*root variables*/
+
+:root {
+  --black-shadow-color: rgba(0, 0, 0, 0.15);
+  --light-shadow-color: rgba(0, 0, 0, 0.2);
+  --btn-gradients-light-hover-quiet-color: #dcf4ff;
+  --btn-gradients-light-pressed-color: #aedcf5;
+  --btn-gradients-light-hover-color: #1da4ff;
+  --blue-n1-color: #0072c2;
+  --grey-p1-color: #909090;
+  --grey-p5-color: #D0D0D0;
+  --grey-p6-color: #e0e0e0;
+  --grey-p7-color: #f0f0f0;
+  --grey-p8-color: #f7f7f7;
+  --grey-p9-color: #ffffff;
+  --grey-p3-color: #b0b0b0;
+  --grey-n1-color: #707070;
+  --grey-n5-color: #303030;
+  --very-light-grey-color: #f9f9f9;
+  --icon-light-blue-color: #005eac;
+  --light-sky-blue-color: rgba(136, 221, 255, 0.15);
+  --rough-n-tumble-color: #5a4949;
+  --light-secondary: #606060;
+  --search-blue: #88DDFF;
+  --dodger-blue: #1792e5;
+}
+
+/* Font-family */
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuEHiC4W.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*:not(.find-widget.visible div) {
+  font-family: "Dancing Script" !important;
+}
+
+/* KPIs*/
+
+.kpi-module__hero {
+background-color: black;
+color: white;
+}
+
+/* app background*/
+*/
+
+.rd-button-primary,
+.bk-button-primary,
+.button-module__primary {
+  font-weight: 800 !important;
+  background: linear-gradient(
+    144.82deg,
+    #0072c2 5.58%,
+    #1792e5 93.38%
+  ) !important;
+  box-shadow: 1px 1px 1px var(--black-shadow-color) !important;
+  border-radius: 4px !important;
+  color: var(--grey-p9-color) !important;
+}
