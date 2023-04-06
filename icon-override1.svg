@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="width:0;height:0;visibility:hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <defs/>
+   <symbol id="rd-icon-chart" viewBox="0 0 18 18">
+      <path d="m8.5 4.5c0 1.38071-1.11929 2.5-2.5 2.5s-2.5-1.11929-2.5-2.5 1.11929-2.5 2.5-2.5 2.5 1.11929 2.5 2.5z"/>
+      <path d="m15.5 3.375h-2v2.625h-2.5v2h2.5v2.375h2v-2.375h2.5v-2h-2.5z"/>
+      <path d="m1 12.875c0-2.7614 2.23858-5 5-5s5 2.2386 5 5v3.125h-10z"/>
+   </symbol>
+</svg>
